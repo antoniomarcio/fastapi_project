@@ -4,7 +4,7 @@ from http import HTTPStatus
 def test_read_root__retornar_ok_e_ola_mundo(client):  # Arrange (organização)
     response = client.get('/')  # Act (ação)
 
-    assert response.status_code == HTTPStatus.OK  # Assert (afirmação)
+    assert response.status_code == HTTPStatus.OK  # Assert (afirmar)
 
     assert response.json() == {'message': 'Olá mundo!'}  # Assert (afirmação)
 
